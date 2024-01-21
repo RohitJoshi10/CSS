@@ -1,0 +1,59 @@
+/* *{
+    margin: 0;
+    padding: 0; 
+}
+ */
+
+ /*Text color*/
+ h1{
+    color: blue;
+    background-color: azure;
+ }
+
+ /*Text alignment*/
+ h1{
+    text-align: center;
+ }
+
+ p{
+    text-align: justify;
+ }
+
+ /*Text decoration*/
+ a{
+    text-decoration: underline;
+ }
+
+ .cut{
+    text-decoration-line: line-through;
+    text-decoration-color: chartreuse;
+    text-decoration-style: wavy;
+    text-decoration-thickness:inherit;
+    
+ }
+
+ /*Text Transfrom*/
+ h3{
+    text-transform: uppercase;
+ }
+
+ /*Text Spacing*/
+ pre{
+    text-indent: 2px;
+    letter-spacing: 4px;
+    line-height: 2px;
+    word-spacing: 13px;
+    white-space: nowrap;
+ }
+
+/*Text shadow*/
+h1{
+    text-shadow: 6px 2px 3px  rgb(255, 255, 0);
+}
+
+body {
+    color: #fcfcfc;
+    background-color: #001219;
+    font-size: 12px;
+    font-family: cursive;
+}

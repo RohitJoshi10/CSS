@@ -1,0 +1,80 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+   
+p{
+    color: rgb(219, 55, 241);
+    /* Paragraph is a block element but we can make it inline by display property*/
+    display: inline;
+}
+
+img{
+   width: 250px;
+   display: none;
+}
+
+a{
+    margin: 5px;
+    display: inline-block;
+}
+
+li{
+    display: inline;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: aliceblue;
+}
+
+li:hover{
+    color: violet;
+    cursor: pointer;
+}
+
+/* 
+We have 4 display properties:- 
+
+1. Block:-  A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). Examples of block-level elements: 
+div,
+ h1-h6,
+ p,
+ form,
+ header,
+ footer,
+ section,
+ li, ul etc
+
+ 2. Inline:-  We can't chnage the width(size) of an inline element.
+  An inline element does not start on a new line and only takes up as much width as necessary. Examples of Inline elements:
+  span,
+  a,
+  img
+
+  3. inline-block:- img is a inline block element. That's why we can change it's width. They can behave as inline elemnent and at the same time can change thier width also.
+
+  4. none:-  display none se wo element hide ho jata h.
+  Hiding an element can be done by setting the display property to none. 
+  The element will be hidden, and the page will be displayed as if the element is not there: 
+  h1.hidden {
+     display: none;
+ }
+
+ visibility:hidden; also hides an element. However, the element will still take up the same space as before. 
+ The element will be hidden, but still affect the layout: 
+ h1.hidden {
+     visibility: hidden;
+ }
+
+*/

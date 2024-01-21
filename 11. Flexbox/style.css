@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    border: 2px solid red;
+    display: flex; /* Display flex krne se ye hoga ki mera container flex ban jaeyga and uske saare children ek line mai aa jayenge*/
+    gap: 10px;  
+    /* row-gap: 10px; 
+    column-gap: 10px;  */
+
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: wrap row;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-start; */
+    justify-content: center;
+
+    /* align-items: stretch;  */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+
+    /* align-content: flex-start; */
+    /* align-content: space-between; */
+    align-content: space-evenly;
+
+}
+
+.box{
+    border: 2px solid green;
+    /* margin: 10px; */
+    width: 80px;
+}
+
+#box-1{
+    order: 1; /*Get arranged in ascending order */
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+    flex-basis: 200px;
+}
+
+#box-3{
+   /* flex-grow: 3; */
+   flex: 0 0 200px; /* flex-grow,shrink,basis*/
+   align-self: stretch;
+}
+
+
+
+
+
+/*
+
+PROPERTIES OF FELX CONTAINER-----> PARENT
+1. Jab kabhi bhi hum kisi cheez ko flex krte hai toh wo hamesa main axis k around hoti h na ki cross axis k.
+main-axis(horizontal line) cross-axis(vertical line)
+2. Agar hum flex ko cross axis k around krna chahte hai toh hume uski direction change krni padegi
+flex-direction: column;
+By default flex direction row he hoti h and we can change it to row, row-reverse, col, col-reverse
+
+3. gap:-  Gap children k bich mai gap deta h na ki parent aur children. It is also defined on container.
+   row-gap:- Rows k bich mai gap deta hai.
+   column-gap:- Column k bich mai gap deta hai.
+
+
+3. Flex-Container Properties
+Flex container properties are used for controlling the layout of child elements inside a flexible parent element (the one with display set as flex).
+These include:
+1. flex-direction:- row, col, row-reverse(right side se fill hona start hoga), col-reverse(bottom se fill hona start hoga)
+2. flex-wrap:- wrap(jab content shrink hoga toh wo ek k niche ek aana suru kr denge), no-wrap, wrap-reverse
+3. flex-flow:- It is shorthand property for flex-direction and flex-wrap.
+4. justify-content:- We use this to align the item(Children) on the main-axis, which in case is the inline axis running horizontally. but if you want to align it in cross axis then you have to change flex-direction from row to column.
+   justify-content: space-around; Jo bhi extra space bachega usko hamare content k around(left or right) mai de dega.
+   justify-content: space-between; items k bich mai space dega but left aur right side mai nhi.
+   justify-content: space-evenly; space evenly distribute ho jayega.
+   justify-content: flex-start; saare k saare elements ko left side align kr deta hai.
+   justify-content: flex-end; saare k saare elements ko right side align kr deta hai.
+   justify-content: flex-center; saare k saare elements ko center align kr deta hai.
+
+5. align-items:- iski help se hum apne children's ko cross axis k around align kr skte hai.
+   align-items: stretch; Streches the height of the items. It is the defaukt value.
+   align-items: center; items sirf apni he height lenge . This is one of the way to center ek div ko dusre div k ander.
+   align-items: flex-start; cross-axis k upper aa jayenge saare elements .ie. they will come vertically.
+   align-items: flex-emd; cross-axis k niche aa jayenge saare elements.
+
+
+
+6. align-content: Shrink krte time do rows k bhich mai gap ban jara h toh usko shi krne k liye use krte hai align-content ka.
+   align-content: flex-start;
+   align-content: space-between; Dono rows k bich mai space aa jaeyga.
+   align-content: space-evenly;
+
+*/
+
+
+
+/*
+FLEX ITEM PROPERTIES-----> CHILDREN
+1. order:- Order in which child should appear in the layout. By default its zero so that first element comes at top.
+2. flex-grow:- hamara wo children jitna space extra bacha hoga wo space le lega. It has a by default property 0.
+3. flex-shrink:- It has by default proptery 1. It tell us ki kon sa wala eleemnt phele shrink hoga. Isko use krte time flex-wrap ko use na kro
+4. flex-basis:- It defines the initial width in the direction of the main axis of the particular child.
+5. flex: flex-grow,shrink,basis 3 no ki shorthand property hai ye.
+6. align-self:- Align that particular element in the crossaxis.
+
+*/
+

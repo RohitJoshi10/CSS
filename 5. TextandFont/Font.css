@@ -1,0 +1,21 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nabla&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+body{
+font-family: 'Montserrat', sans-serif;
+    font-family: 'Nabla', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+}
+
+/*font-family property to specify the font of a text.*/
+p{
+    /* font-family: cursive; */
+    font-size: larger;
+    font-weight: 500;
+    font-style: italic;
+}
+
+h1{
+    /* font-family: 'Brush Script MT', cursive; */
+    font-size: large;
+}

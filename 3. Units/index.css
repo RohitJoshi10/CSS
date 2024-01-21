@@ -1,0 +1,51 @@
+main{
+    border: 5px solid blue; /* border: linewidth linestyle linecolor; */
+    width: 25%; 
+}
+
+body{
+    font-size: 2em;
+}
+
+header{
+    font-size: 2em;
+}
+
+h1{
+      /* font-size: 3em; */
+      font-size: 3rem;
+}
+
+section{
+    border: 5px dashed greenyellow;
+    width: 50vw; 
+}
+
+
+/* 
+
+1. VW:- Is absolute unit--- Actual width ka 2times
+   width: 50vw; It means taking 100% of the view width i.e the toatal width.
+   
+2. %:- It is relative unit-- Relative to other element.
+   width: 50%; Here main parent is body. Boday having 100% width. Now when i give main 50% width it take that width form the parent.
+
+3. px:- It is also absolute. It is fixed. 
+
+4. em:- relative to the parent.
+
+5. rem:- relative to the root.
+
+6. In font-size we  should never use px as it is absolute.
+   In font-size we should always use em. It is a relative unit.
+   em :- Relative to font size of the parent. Parent is by default of 1em. 16px = 1em.
+   h1 ka px by default hota hai 2em. so jab maine header jiska by default 1em hota h. usko override krke 2em kia toh mere. h1 ka font size ab ho gya 2em*2em = 4em
+   h1 = 1em(html ka) * 2em (body ka) * 2em (header ka) * 2em(h1 ka) = 8em ho jayega h1 ka.
+
+   But if you want ki mera sized root pe depend kre na ki mere parent k parent and so on pe.
+   So for that use rem.
+
+   Best pratice is to define all the font size of different element at the begining only.
+
+
+*/

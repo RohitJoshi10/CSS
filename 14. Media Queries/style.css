@@ -1,0 +1,58 @@
+body{
+    background-color: aquamarine;
+}
+
+
+/* Portrait means when device height > width*/
+@media (min-width: 400px) and (max-width:500px)
+{
+    body{
+        background-color: cornsilk;
+    }
+}
+
+@media (min-width: 600px)
+{
+    body{
+        background-color: gold;
+    }
+}
+
+
+
+/* 
+
+Changed when device width changes 
+width <= 400px -----> This is the new way of writing it.
+max-width: 400px ----> This is the old way of writing it.(Up-to 400px) min-width meeans starting from
+@media (width <= 400px){
+    body{
+        background-color: cornsilk;
+    }
+}
+
+
+
+We can also do changes on the basis of orientation
+Portrait means when device height>width
+@media (orientation: portrait) {
+    body {
+         background-color: cornsilk;
+    }
+}
+
+
+
+We can define one or more condition also
+Portrait means when device height > width
+@media (min-width: 400px) and (max-width:500px) {
+    body {
+        background-color: cornsilk;
+    }
+}
+
+The same condition can also be written as:- (400px <= 600px)
+
+
+*/
+

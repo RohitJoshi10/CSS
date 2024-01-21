@@ -1,0 +1,42 @@
+/*Universal Selector*/
+* {
+    font-family: cursive;
+    text-align: center;
+}
+
+/* Element Selector*/
+body{
+    font-size: 24px;
+}
+
+/* ID Selector and Grouping Selectors*/
+#first,#second{
+    color: rgb(255, 146, 127);
+}
+
+
+/* Class Selector */
+.purple{
+    color: purple;
+    font-family: monospace;
+}
+
+.highlight{
+    background-color: rgb(242, 242, 129);
+    font-style: italic;
+}
+
+/* Attribute Selector*/
+a[target="_blank"]{
+    background-color: rgb(152, 161, 251);
+}
+
+/* Nested Selector*/
+#nested>p{
+    color: cadetblue;
+}
+
+/*Pseudo Selector*/
+p:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    
+    width: 200px;
+    height: 200px;
+    border: 20px solid red;
+    padding: 30px; 
+    margin: 40px;  
+}
+
+/*
+  1. Properties work clockwise: top, right, bottom, left.
+  border: 40px(top) 30px(right) 20px(bottom) 10px(left)
+  border: 40px(top) 30px(left+right) 10px(bottom)
+  border: 40px(top+bottom) 30px(left+right)
+
+  2. Har HTML element ko by default margin mila hota hai phele se he. so remove it.
+  *{
+    margin: 0;
+   }
+
+  3. Margin: Used to sepreate two elements from each other.
+  4. Padding: Used to sepreate content from it's border.
+
+  5.  width: 200px;
+      height: 200px;
+  This is not the actual width and height of the box. 
+  box-width=200(content)+30(leftpadding)+30(rightpadding)+20(leftboreder)+20(rightborder)=300px. 
+  and same for boxheight. so my box height is now 300 by 300. 
+  So to remove this issue we use BOX-SIZING.
+
+  6. box-sizing: border-box;
+  Jo bhi mere content hai sabhi box mai unki sizing border-box k hisaab se hogi i.e 200 by 200 px.
+*/

@@ -1,0 +1,39 @@
+/*
+
+Z-INDEX PROPERTY The z-index property specifies the stack order of an element. When elements are positioned,
+they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). An element can have a positive or negative stack order: If two positioned elements overlap each other without a z-index specified,
+the element defined last in the HTML code will be shown on top.
+
+*/
+
+.container{
+    position: relative;
+}
+
+.black-box{
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+    margin: 30px;
+}
+
+.gray-box{
+    position: absolute;
+    z-index: 3;
+    background: lightgray;
+    height: 60px;
+    width: 70%;
+    top: 50px;
+    left: 50px; 
+}
+
+.green-box{
+    position: absolute;
+    z-index: 2;
+    background: lightgreen;
+    width: 35%;
+    height: 100px;
+    top: -15px;
+    left: 270px;
+}
