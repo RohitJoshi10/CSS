@@ -10,7 +10,7 @@
     background-color: azure;
  }
 
- /*Text alignment*/
+/*Text alignment */
  h1{
     text-align: center;
  }
@@ -41,7 +41,7 @@
  pre{
     text-indent: 2px;
     letter-spacing: 4px;
-    line-height: 2px;
+    line-height: 2px; /* Agr hume text k bich mai bhaut saari space chahye toh hum line height ka use krte hai.*/
     word-spacing: 13px;
     white-space: nowrap;
  }

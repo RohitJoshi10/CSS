@@ -30,7 +30,7 @@ section{
 2. %:- It is relative unit-- Relative to other element.
    width: 50%; Here main parent is body. Boday having 100% width. Now when i give main 50% width it take that width form the parent.
 
-3. px:- It is also absolute. It is fixed. 
+3. px:- It is also absolute. It is fixed. 96px = 1inch
 
 4. em:- relative to the parent.
 

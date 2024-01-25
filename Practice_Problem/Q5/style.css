@@ -1,0 +1,7 @@
+/*
+Q1. Set the font family of all the content in the document to "Times New Roman".
+*/
+
+*{
+   font-family: 'Times New Roman', Times, serif;
+}
