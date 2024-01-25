@@ -1,0 +1,8 @@
+/*
+Q2. Create 3 headings with h1, h2 & h3
+Give them all a class "heading" & set color of "heading" to red.
+*/
+
+.heading{
+    color: red;
+}
