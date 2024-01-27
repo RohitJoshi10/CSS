@@ -1,0 +1,31 @@
+/*Create a nave bar*/
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+nav{
+    height: 60px;
+    background-color: #0f1111;
+}
+
+a{
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+#a-1{
+    font-size: 25px;
+   color:#f08804;
+}
+
+
+button{
+    background-color: #f08804;
+    padding: 4px;
+}
+
+
+/*div k ander ka content next line pe chla jata hai*/
