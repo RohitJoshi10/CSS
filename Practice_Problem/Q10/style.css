@@ -1,0 +1,25 @@
+/*
+Q1. Create the following layout using the given html.
+    1) Give the div a height, width & some background image.
+    2) Use the appropriate position property for the div element to place it at the right end of the page. (The div should not move even on scroll)
+
+    <p>lorem*5</p>
+    <div>Love Nature</div>
+    <p>lorem*5</p>
+*/
+
+div{
+    height: 200px;
+    width: 200px;
+    color: rgb(95, 2, 235);
+    background-image: url('./Cute_Girl.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    
+}
+ 
+        
