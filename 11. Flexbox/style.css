@@ -101,12 +101,24 @@ These include:
 
 /*
 FLEX ITEM PROPERTIES-----> CHILDREN
-1. order:- Order in which child should appear in the layout. By default its zero so that first element comes at top.
-2. flex-grow:- hamara wo children jitna space extra bacha hoga wo space le lega. It has a by default property 0.
-3. flex-shrink:- It has by default proptery 1. It tell us ki kon sa wala eleemnt phele shrink hoga. Isko use krte time flex-wrap ko use na kro
-4. flex-basis:- It defines the initial width in the direction of the main axis of the particular child.
-5. flex: flex-grow,shrink,basis 3 no ki shorthand property hai ye.
+1. order:- The order property specifies the order of the flex items. The first flex item in the code does not have to appear as the first item in the layout. The order value must be a number,
+default value is 0. Order in which child should appear in the layout. By default its zero so that first element comes at top.
+
+2. flex-grow:- The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items. The value must be a number,
+default value is 0. hamara wo children jitna space extra bacha hoga wo space le lega. It has a by default property 0.
+
+3. flex-shrink:- The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. It has by default proptery 1. It tell us ki kon sa wala eleemnt phele shrink hoga. Isko use krte time flex-wrap ko use na kro
+
+4. flex-basis:- The flex-basis property specifies the initial length of a flex item. It defines the initial width in the direction of the main axis of the particular child.
+
+5. flex: The flex property is a shorthand property for the flex-grow,
+flex-shrink,and flex-basis properties. flex: 0 0 200px.
+
 6. align-self:- Align that particular element in the crossaxis.
+The align-self property specifies the alignment for the selected item inside the flexible container. The align-self property overrides the default alignment set by the container's align-items property.
 
 */
 
+/* Main axis k along center kia phele div ko (left-right) as by default our flex direction is row/horizontal so our main axis is L-R. So,
+ we will use justify-content: center;
+ to center our div from the main-axis. Now we need to center our div from the cross/vertical axis also. Cross-axis k along items ko centre krne k liye hum use krte hai align-items ko. */

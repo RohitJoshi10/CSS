@@ -1,0 +1,27 @@
+/*
+Q1. Using flexbox to center one div inside another div.
+*/
+
+#outer{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner{
+    background-color: orangered;
+    width: 200px;
+    height: 200px;
+}
+
+
+/*
+  Main axis k along center kia phele div ko (left-right) as by default our flex direction is row/horizontal so our main axis is L-R.
+  So, we will use justify-content: center; to center our div from the main-axis.
+
+  Now we need to center our div from the cross/vertical axis also.
+  Cross-axis k along items ko centre krne k liye hum use krte hai align-items ko.
+*/
