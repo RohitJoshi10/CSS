@@ -1,0 +1,48 @@
+div{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    left: 300px;
+    transition: all 2s ease-in;
+    /* transform: rotate(45deg); */
+
+}
+
+div:hover{
+    /* transform: scale(1, 2); */
+    /* transform: translate(50px); */
+    transform: skew(70deg);
+}
+
+
+
+/*
+ Transform:- Used to apply 2D and 3D transformation to an element.
+
+ 1. rotate
+    transform: rotate(45deg);
+    rotate: 45deg;
+    rotateX: 45deg;
+    rotateY: 45deg;
+    rotateZ: 45deg;
+
+ 2. scale: get x times bigger.
+    transfrom: scale(2);
+    transfrom: scale(0.5);
+    transfrom: scale(1,2);
+    transfrom: scaleX(0.5);
+    transfrom: scaleY(0.5);
+
+ 3. translate: means screen phr kisi cheez ko move karana.
+    transform: translate(20px);
+    transform: translate(20px, 50px);
+    transform: translateX(20px);
+    transform: translateY(20px);
+
+ 4. skew:
+    transfrom: skew(30deg);
+
+*/

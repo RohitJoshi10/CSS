@@ -1,0 +1,82 @@
+div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* animation-name: badsha;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    animation: badsha 0.25s ease-in 1s infinite normal;
+}
+
+/* @keyframes badsha {
+    from {
+        left: 0px;
+        background-color: rgb(225, 9, 9);
+    }
+    to {
+        left: 600px;
+        background-color: rgb(251, 255, 0);
+    }
+} */
+
+
+@keyframes badsha {
+    0% {
+        left: 0px;
+        background-color: rgb(225, 9, 9);
+    }
+
+    30% {
+        left: 300px;
+        background-color: rgb(9, 38, 225);
+    }
+
+    60% {
+        left: 500px;
+        background-color: rgb(88, 225, 9);
+    }
+
+    100% {
+        left: 700px;
+        background-color: rgb(251, 255, 0);
+    }
+}
+
+/*
+  Animation in CSS: 
+  This is just a template. To apply it you need to give animation property.
+  @keyframe badsha{
+    from {font-size: 20px;}
+    to {font-size: 40px;}
+  }
+
+  Animation Properties
+
+  1. animation-name
+  2. animation-duration
+  3. animation-timing-function
+  4. animation-delay
+  5. animation-iteration-count ---> how many times my animation should get apply
+  6. animation-direction: normal, reverse, alternate, alternate-reverse;
+
+
+  from means: 0%
+  to means: 100%
+  We can also define middle stage
+
+  @keyframe badsha{
+    0% { font-size: 20px; }
+    50% {font-size: 30px; }
+    100% {font-size: 40px; }
+  }
+
+
+*/

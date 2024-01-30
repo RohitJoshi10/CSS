@@ -1,0 +1,37 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: steps(5);
+    transition-delay: 1s;  */
+    transition: all 2s ease-in 1s;
+}
+
+/*Here we are going from noraml state to hover or active(when clicked) state*/
+div:hover{
+    background-color: chartreuse;
+    color: blue;
+    font-size: 20px;
+}
+
+div:active{
+    background-color: palevioletred;
+}
+
+/*
+ Transitions:- It enables you to define the transaction between two states of an element.
+ 1. transition-property: property you want to transition(font-size, width etc.)
+ 2. transition-duration: 2s/4ms..
+ 3. transition-timing-function: ease-in/ease-out/linear/steps..
+ 4. transaction-delay: 2s/4ms..
+
+ Transaction shorthand property
+ 5. transition: font-size 2s ease-in-out 0.2s;
+*/
+
